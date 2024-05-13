@@ -1,4 +1,5 @@
-<!DOCTYPE html<html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,7 +7,7 @@
 <style>
   body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f9fafc;
     margin: 0;
     padding: 0;
   }
@@ -17,27 +18,40 @@
     background-color: #fff;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
   }
   .student-details {
     margin-bottom: 20px;
+    text-align: center;
   }
   .student-details h1 {
     color: #333;
+    font-size: 28px;
+    margin-bottom: 10px;
   }
   .student-details p {
     color: #666;
     margin: 5px 0;
+    font-size: 16px;
+  }
+  .student-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
   }
   .view-link {
-    display: block;
-    width: max-content;
-    padding: 10px 15px;
+    display: inline-block;
+    padding: 10px 20px;
     text-align: center;
-    background-color: #50b3a2;
+    background-color: #4CAF50;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  .view-link:hover {
+    background-color: #45a049;
   }
   footer {
     text-align: center;
@@ -45,20 +59,28 @@
     background-color: #e9ecef;
     color: #333;
     border-top: 1px solid #ccc;
+    margin-top: 20px;
+    border-radius: 5px;
   }
 </style>
 </head>
 <body>
   <div class="container">
     <div class="student-details">
+      <img src="shuq.jpeg" alt="Student Image" class="student-image">
       <h1>Yusuf Shuqrah Adenike</h1>
       <p><strong>Admission Number:</strong> 1911402025</p>
       <p><strong>Department:</strong> Electrical and Electronic Engineering</p>
       <p><strong>Course Code:</strong> EEC410</p>
+      <p><strong>Email:</strong> yusuf.adenike@example.com</p>
+      <p><strong>Phone:</strong> +1234567890</p>
       <!-- Add more personal details as needed -->
     </div>
     <a href="assignment_list.html" class="view-link">View Assignments</a>
   </div>
   
+  <footer>
+    &copy; 2024 ADENIKE. All rights reserved.
+  </footer>
 </body>
 </html>
