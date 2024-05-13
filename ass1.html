@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 1 Details</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+.code{
+    font-family: 'Courier New', Courier, monospace;
+    margin-left: 2%;
+}
+  .nav{
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.nav a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+}
+  .container {
+    width: 80%;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  .assignment-details {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 8px;
+  }
+  .assignment-details p {
+    margin: 10px 0;
+    color: #666;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #e9ecef;
+    color: #333;
+    border-top: 1px solid #ccc;
+  }
+</style>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html" > HOME</a>
+    </div> 
+
+  <div class="container">
+    <h1>Assignment 1</h1>
+    <div class="assignment-details">
+      <h2>Course Code: EEC410</h2>
+      <p><strong>Title:</strong> Computer Programming for Engineers</p>
+      <p><strong>Description:</strong> A Computer Program Written in Fortran to Calculate Acceleration Due to Gravity Using Newton's Equations</p>
+      <p><strong>Date Submitted :</strong> 2024-05-10</p>
+      <p class="code">
+        program newtons_first_law<br><br>
+    implicit none<br><br>
+    ! Declare variables<br><br>
+    real :: velocity, force, mass<br><br>
+    real, parameter :: acceleration_due_to_gravity = 9.81<br><br>
+    ! Prompt user for input<br><br>
+    print *, "Enter the mass of the object (in kg):"<br><br>
+    read(*,*) mass<br><br>
+    ! Compute force required to move the object<br><br>
+    force = mass * acceleration_due_to_gravity<br><br>
+    ! Compute velocity if no force is applied (according to Newton's first law)<br><br>
+    velocity = 0.0<br><br>
+    ! Output results<br><br>
+    print *, "According to Newton's first law:"<br><br>
+    print *, "Force required to move the object (in N): ", force<br><br>
+    print *, "Velocity of the object (if no force is applied) (in m/s): ", velocity<br><br>
+end program newtons_first_law
+      </p>
+      <hr>
+      <p>
+        <strong>
+            Explanation of Logical Steps:
+        </strong>
+        <br> <br>
+        1. Define the function: We define a fuction <strong><i>newtons_first_law</i></strong> that takes two parameters <strong><i>force</i></strong>
+         and <strong><i>mass</i><br></strong>
+         <br>
+        2. Calculate acceleration_due_to_gravity: within the function, we Calculate the acceleration using the formula <strong>
+            acceleration = force/mass         </strong>            <br> <br> 
+        3. Return Result: we return the Calculated acceleration from the function<br> <br>
+        4. Input Data: We ask the user to input the force and mass <br> <br>
+        5. Function Call: We call the <strong><i>newtons_first_law</i></strong> function witht the provided force and mass <br> <br>
+        6. Display Result: We print the Calculated acceleration as the resultant acceleration.
+      </p>
+      <p><a href="assignment_list.html">Back to Assignments</a></p>
+    </div>
+  </div>
+  <footer>
+    <p>© 2024 Yusuf Shuqrah Assignment Portal</p>
+  </footer>
+</body>
+</html>
+
